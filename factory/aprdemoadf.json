@@ -1,0 +1,9 @@
+{
+	"name": "aprdemoadf",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3fb627d4-13b5-4b27-941e-c484080df80c",
+		"tenantId": "5d5e4e99-0592-457c-9d98-cfca00310e87"
+	}
+}
