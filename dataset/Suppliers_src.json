@@ -1,0 +1,43 @@
+{
+	"name": "Suppliers_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aprdemopos",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Suppliers%202.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SupplierID",
+				"type": "String"
+			},
+			{
+				"name": "SupplierName",
+				"type": "String"
+			},
+			{
+				"name": "ContactNumber",
+				"type": "String"
+			},
+			{
+				"name": "Email",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			}
+		]
+	}
+}
