@@ -1,5 +1,5 @@
 {
-	"name": "suppliers_src2",
+	"name": "suppliers_src",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "aprdemopos",

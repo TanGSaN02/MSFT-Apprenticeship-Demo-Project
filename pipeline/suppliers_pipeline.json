@@ -48,7 +48,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "suppliers_src2",
+						"referenceName": "suppliers_src",
 						"type": "DatasetReference"
 					}
 				],
