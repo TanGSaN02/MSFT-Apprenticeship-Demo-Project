@@ -8,6 +8,12 @@
 		"aprdemokeyvaultls_properties_typeProperties_baseUrl": {
 			"value": "https://apredemokeyvault.vault.azure.net/"
 		},
+		"aprdemopos_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/TanGSaN02/MSFT-Apprenticeship-Demo-Project/refs/heads/main/"
+		},
+		"aprdemopos_properties_typeProperties_userName": {
+			"value": "azureuser"
+		},
 		"containerUri": {
 			"value": ""
 		},
