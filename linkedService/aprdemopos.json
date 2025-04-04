@@ -1,0 +1,21 @@
+{
+	"name": "aprdemopos",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/TanGSaN02/MSFT-Apprenticeship-Demo-Project/refs/heads/main/",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Basic",
+			"userName": "azureuser",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "aprdemokeyvaultls",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sdvdemokey"
+			}
+		}
+	}
+}
