@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "aprdemoadf"
 		},
+		"aprdemodestls_properties_typeProperties_url": {
+			"value": "https://aprdemostorageacc.dfs.core.windows.net/"
+		},
 		"aprdemokeyvaultls_properties_typeProperties_baseUrl": {
 			"value": "https://apredemokeyvault.vault.azure.net/"
 		},
