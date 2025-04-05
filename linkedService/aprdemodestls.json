@@ -1,0 +1,11 @@
+{
+	"name": "aprdemodestls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://aprdemoadls.dfs.core.windows.net/"
+		}
+	}
+}
