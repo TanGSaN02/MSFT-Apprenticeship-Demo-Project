@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "aprdemoadf"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://aprdemoadls.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://apredemokeyvault.vault.azure.net/"
+		},
+		"HttpServer1_properties_typeProperties_url": {
+			"value": "https://github.com/TanGSaN02/MSFT-Apprenticeship-Demo-Project/blob/main/StockMovement%202.csv"
+		},
+		"HttpServer1_properties_typeProperties_userName": {
+			"value": "abc"
+		},
+		"aprdemodestls_properties_typeProperties_url": {
+			"value": "https://aprdemoadls.dfs.core.windows.net/"
+		},
+		"aprdemokeyvaultls_properties_typeProperties_baseUrl": {
+			"value": "https://apredemokeyvault.vault.azure.net/"
+		},
+		"aprdemopos_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/TanGSaN02/MSFT-Apprenticeship-Demo-Project/refs/heads/main/"
+		},
+		"aprdemopos_properties_typeProperties_userName": {
+			"value": "azureuser"
+		}
+	}
+}
