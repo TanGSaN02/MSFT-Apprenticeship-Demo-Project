@@ -1,0 +1,42 @@
+{
+	"name": "Transaction_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aprdemodestls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-00000-tid-3765097619071498510-6326d88e-81d9-4837-a0f4-0f59902595c0-11-1.c000.snappy.parquet",
+				"folderPath": "transactions.parquet",
+				"fileSystem": "silver"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "TransactionID",
+				"type": "UTF8"
+			},
+			{
+				"name": "ItemID",
+				"type": "UTF8"
+			},
+			{
+				"name": "TransactionType",
+				"type": "UTF8"
+			},
+			{
+				"name": "Quantity",
+				"type": "UTF8"
+			},
+			{
+				"name": "TransactionDate",
+				"type": "UTF8"
+			}
+		]
+	}
+}
