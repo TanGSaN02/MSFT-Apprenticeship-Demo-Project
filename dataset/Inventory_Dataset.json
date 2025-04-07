@@ -1,0 +1,42 @@
+{
+	"name": "Inventory_Dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aprdemodestls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "inventory.parquet",
+				"folderPath": "inventory_parquet",
+				"fileSystem": "silver"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "ItemID",
+				"type": "UTF8"
+			},
+			{
+				"name": "ItemName",
+				"type": "UTF8"
+			},
+			{
+				"name": "Category",
+				"type": "UTF8"
+			},
+			{
+				"name": "UnitPrice",
+				"type": "UTF8"
+			},
+			{
+				"name": "ReorderLevel",
+				"type": "UTF8"
+			}
+		]
+	}
+}
