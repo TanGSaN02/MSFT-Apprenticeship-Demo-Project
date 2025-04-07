@@ -1,12 +1,12 @@
 {
-	"name": "aprdemodest",
+	"name": "histsales_parquet",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "aprdemodestls",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "DelimitedText",
+		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
@@ -14,12 +14,8 @@
 				"folderPath": "Historicsales.parquet",
 				"fileSystem": "silver"
 			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			"compressionCodec": "snappy"
 		},
 		"schema": []
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }

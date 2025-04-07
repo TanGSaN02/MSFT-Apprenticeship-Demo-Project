@@ -1,0 +1,16 @@
+{
+	"name": "HistoricsalesTable",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "apprentice",
+			"table": "historicsales"
+		},
+		"sqlPool": {
+			"referenceName": "aprdemodedicatedpool",
+			"type": "SqlPoolReference"
+		}
+	}
+}
