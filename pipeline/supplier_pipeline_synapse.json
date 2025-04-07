@@ -1,0 +1,35 @@
+{
+	"name": "supplier_pipeline_synapse",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data from parquet to sqlpool",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"sink": {
+						"type": "SqlPoolSink",
+						"allowCopyCommand": true,
+						"tableOption": "autoCreate"
+					},
+					"enableStaging": false
+				},
+				"outputs": [
+					{
+						"referenceName": "supplier_parquet_copy_to_synapse",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

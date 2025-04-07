@@ -1,0 +1,16 @@
+{
+	"name": "supplier_parquet_copy_to_synapse",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "apprentice",
+			"table": "suppliers"
+		},
+		"sqlPool": {
+			"referenceName": "aprdemodedicatedpool",
+			"type": "SqlPoolReference"
+		}
+	}
+}
