@@ -1,0 +1,42 @@
+{
+	"name": "suppliers_syn_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aprdemodestls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "suppliers.parquet",
+				"folderPath": "Suppliers.parquet",
+				"fileSystem": "silver"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "SupplierID",
+				"type": "UTF8"
+			},
+			{
+				"name": "SupplierName",
+				"type": "UTF8"
+			},
+			{
+				"name": "ContactNumber",
+				"type": "UTF8"
+			},
+			{
+				"name": "Email",
+				"type": "UTF8"
+			},
+			{
+				"name": "City",
+				"type": "UTF8"
+			}
+		]
+	}
+}
