@@ -1,0 +1,39 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Month",
+				"type": "String"
+			},
+			{
+				"name": "ItemID",
+				"type": "String"
+			},
+			{
+				"name": "TotalSales",
+				"type": "String"
+			},
+			{
+				"name": "TotalRevenue",
+				"type": "String"
+			}
+		]
+	}
+}
