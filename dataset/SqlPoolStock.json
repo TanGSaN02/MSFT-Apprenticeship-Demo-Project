@@ -1,0 +1,16 @@
+{
+	"name": "SqlPoolStock",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "apprentice",
+			"table": "stock2"
+		},
+		"sqlPool": {
+			"referenceName": "aprdemodedicatedpool",
+			"type": "SqlPoolReference"
+		}
+	}
+}

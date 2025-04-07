@@ -1,0 +1,54 @@
+{
+	"name": "stock2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "aprdemodestls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "StockMovement.parquet",
+				"folderPath": "StockMovement.parquet",
+				"fileSystem": "silver"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "MovementID",
+				"type": "UTF8"
+			},
+			{
+				"name": "ItemID",
+				"type": "UTF8"
+			},
+			{
+				"name": "SupplierID",
+				"type": "UTF8"
+			},
+			{
+				"name": "MovementType",
+				"type": "UTF8"
+			},
+			{
+				"name": "Quantity",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "MovementDate",
+				"type": "DATE"
+			},
+			{
+				"name": "Remarks",
+				"type": "UTF8"
+			},
+			{
+				"name": "MovementTime",
+				"type": "UTF8"
+			}
+		]
+	}
+}
