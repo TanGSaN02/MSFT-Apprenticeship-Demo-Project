@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "cpy_transaction",
+				"name": "cpy_transaction_adls",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -64,7 +64,7 @@
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "cpy_transaction",
+						"activity": "cpy_transaction_adls",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -87,7 +87,7 @@
 				}
 			},
 			{
-				"name": "cpy_trasaction2",
+				"name": "cpy_transaction_pool",
 				"type": "Copy",
 				"dependsOn": [
 					{
