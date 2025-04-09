@@ -117,21 +117,11 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"sink": {
-						"type": "SqlDWSink",
-						"allowCopyCommand": true
-					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "aprdemodest",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "AzureSynapseAnalyticsTable1",
 						"type": "DatasetReference"
 					}
 				]
