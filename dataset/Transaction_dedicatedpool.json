@@ -3,7 +3,28 @@
 	"properties": {
 		"annotations": [],
 		"type": "SqlPoolTable",
-		"schema": [],
+		"schema": [
+			{
+				"name": "TransactionID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ItemID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TransactionType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Quantity",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TransactionDate",
+				"type": "nvarchar"
+			}
+		],
 		"typeProperties": {
 			"schema": "apprentice",
 			"table": "transactions"

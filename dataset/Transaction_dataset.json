@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "part-00000-tid-3765097619071498510-6326d88e-81d9-4837-a0f4-0f59902595c0-11-1.c000.snappy.parquet",
-				"folderPath": "transactions.parquet",
+				"fileName": "Transactions.parquet",
+				"folderPath": "Transactions.parquet",
 				"fileSystem": "silver"
 			},
 			"compressionCodec": "snappy"
