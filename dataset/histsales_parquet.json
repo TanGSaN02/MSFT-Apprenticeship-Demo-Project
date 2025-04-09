@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "histsales",
+				"fileName": "HistoricSales.parquet",
 				"folderPath": "Historicsales.parquet",
 				"fileSystem": "silver"
 			},
