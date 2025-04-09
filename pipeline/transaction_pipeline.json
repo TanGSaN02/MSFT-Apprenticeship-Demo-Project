@@ -58,6 +58,33 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "transaction_Notebook",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "cpy_transaction",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/apolagani@outlook.com/MSFT-Apprenticeship-Demo-Project/Databricks Notebooks/Transactions notebook"
+				},
+				"linkedServiceName": {
+					"referenceName": "databricks_ls_transactions",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
