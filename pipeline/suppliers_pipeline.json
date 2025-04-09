@@ -78,6 +78,9 @@
 					"secureInput": false
 				},
 				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/chsdv2004@outlook.com/MSFT-Apprenticeship-Demo-Project/Databricks Notebooks/Suppliers Notebook"
+				},
 				"linkedServiceName": {
 					"referenceName": "suppliers_adb",
 					"type": "LinkedServiceReference"
