@@ -120,7 +120,6 @@
 					"sink": {
 						"type": "SqlDWSink",
 						"allowCopyCommand": true,
-						"tableOption": "autoCreate",
 						"disableMetricsCollection": false
 					},
 					"enableStaging": false
@@ -133,7 +132,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSynapseAnalyticsTable1",
+						"referenceName": "AzureSynapseAnalyticsTable2",
 						"type": "DatasetReference"
 					}
 				]
