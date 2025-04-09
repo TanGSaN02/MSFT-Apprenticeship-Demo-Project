@@ -78,10 +78,46 @@
 					"secureInput": false
 				},
 				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/varshig4126@outlook.com/MSFT-Apprenticeship-Demo-Project/Databricks Notebooks/Inventory Notebook"
+				},
 				"linkedServiceName": {
 					"referenceName": "inventory_notebook_ls",
 					"type": "LinkedServiceReference"
 				}
+			},
+			{
+				"name": "copy parquet to synapse",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "ParquetSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "ParquetReadSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "Inventory_Dataset",
+						"type": "DatasetReference"
+					}
+				]
 			}
 		],
 		"annotations": [],
