@@ -54,7 +54,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "aprdemodest",
+						"referenceName": "supplier_bronze",
 						"type": "DatasetReference"
 					}
 				]
@@ -87,7 +87,7 @@
 				}
 			},
 			{
-				"name": "Copy data from parquet to sqlpool",
+				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [
 					{
@@ -107,32 +107,31 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
+						"type": "ParquetSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
+							"type": "ParquetReadSettings"
 						}
 					},
 					"sink": {
-						"type": "SqlDWSink",
-						"allowCopyCommand": true,
-						"disableMetricsCollection": false
+						"type": "SqlPoolSink",
+						"allowCopyCommand": true
 					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "aprdemodest",
+						"referenceName": "suppliers_syn_src",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSynapseAnalyticsTable2",
+						"referenceName": "supplier_parquet_copy_to_synapse",
 						"type": "DatasetReference"
 					}
 				]
