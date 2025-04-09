@@ -117,21 +117,11 @@
 							"type": "ParquetReadSettings"
 						}
 					},
-					"sink": {
-						"type": "SqlPoolSink",
-						"allowCopyCommand": true
-					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "Inventory_Dataset",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "inventorysqlpool",
 						"type": "DatasetReference"
 					}
 				]
