@@ -26,22 +26,11 @@
 							"type": "ParquetReadSettings"
 						}
 					},
-					"sink": {
-						"type": "SqlPoolSink",
-						"allowCopyCommand": true,
-						"tableOption": "autoCreate"
-					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "Inventory_Dataset",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "Inventory_sink_dataset",
 						"type": "DatasetReference"
 					}
 				]

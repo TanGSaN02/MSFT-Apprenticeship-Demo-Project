@@ -87,9 +87,16 @@
 				}
 			},
 			{
-				"name": "copy parquet to synapse",
+				"name": "Copy data to dedicated pool",
 				"type": "Copy",
-				"dependsOn": [],
+				"dependsOn": [
+					{
+						"activity": "inventory notebook",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
 				"policy": {
 					"timeout": "0.12:00:00",
 					"retry": 0,
