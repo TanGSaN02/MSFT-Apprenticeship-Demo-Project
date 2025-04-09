@@ -60,7 +60,7 @@
 				]
 			},
 			{
-				"name": "adls to ",
+				"name": "inventory notebook",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
