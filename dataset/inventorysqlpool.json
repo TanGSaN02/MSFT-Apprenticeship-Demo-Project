@@ -1,0 +1,16 @@
+{
+	"name": "inventorysqlpool",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "apprentice",
+			"table": "inventory"
+		},
+		"sqlPool": {
+			"referenceName": "aprdemodedicatedpool",
+			"type": "SqlPoolReference"
+		}
+	}
+}

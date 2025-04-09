@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "inventory.parquet",
-				"folderPath": "inventory_parquet",
+				"fileName": "Inventory.parquet",
+				"folderPath": "Inventory.parquet",
 				"fileSystem": "silver"
 			},
 			"compressionCodec": "snappy"
