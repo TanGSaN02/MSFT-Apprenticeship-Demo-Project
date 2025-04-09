@@ -60,7 +60,7 @@
 				]
 			},
 			{
-				"name": "Notebook1",
+				"name": "suppliers_",
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
