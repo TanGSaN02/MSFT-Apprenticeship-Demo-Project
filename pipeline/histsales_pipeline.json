@@ -58,6 +58,33 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Copy histsales to adls",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/ogiralanagasaihemanth@outlook.com/msft-apprenticeship-demo-project/Databricks Notebooks/Histroical_sales_notebook"
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricks_hIstoricalsales",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
