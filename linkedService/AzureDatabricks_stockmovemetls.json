@@ -10,7 +10,7 @@
 			"existingClusterId": "0404-094411-c71j7461"
 		},
 		"connectVia": {
-			"referenceName": "integrationRuntime4",
+			"referenceName": "AutoResolveIntegrationRuntime",
 			"type": "IntegrationRuntimeReference"
 		}
 	}
