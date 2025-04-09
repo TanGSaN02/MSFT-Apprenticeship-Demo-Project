@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "histsales.parquet",
-				"folderPath": "Historicsales.parquet",
+				"fileName": "suppliers.parquet",
+				"folderPath": "Suppliers.parquet",
 				"fileSystem": "silver"
 			},
 			"columnDelimiter": ",",
