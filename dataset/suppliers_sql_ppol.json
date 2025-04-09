@@ -1,0 +1,16 @@
+{
+	"name": "suppliers_sql_ppol",
+	"properties": {
+		"annotations": [],
+		"type": "SqlPoolTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "apprentice",
+			"table": "suppliers"
+		},
+		"sqlPool": {
+			"referenceName": "aprdemodedicatedpool",
+			"type": "SqlPoolReference"
+		}
+	}
+}

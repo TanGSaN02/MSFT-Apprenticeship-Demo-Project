@@ -1,5 +1,5 @@
 {
-	"name": "suppliers_pipeline",
+	"name": "suppliers_pipeline_adf",
 	"properties": {
 		"activities": [
 			{
@@ -85,56 +85,6 @@
 					"referenceName": "suppliers_adb",
 					"type": "LinkedServiceReference"
 				}
-			},
-			{
-				"name": "copy to syn",
-				"type": "Copy",
-				"dependsOn": [
-					{
-						"activity": "suppliers_notebook",
-						"dependencyConditions": [
-							"Completed"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"source": {
-						"type": "ParquetSource",
-						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "ParquetReadSettings"
-						}
-					},
-					"sink": {
-						"type": "SqlPoolSink",
-						"allowCopyCommand": true
-					},
-					"enableStaging": false
-				},
-				"inputs": [
-					{
-						"referenceName": "suppliers_syn_src",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "suppliers_sql_ppol",
-						"type": "DatasetReference"
-					}
-				]
 			}
 		],
 		"annotations": []
