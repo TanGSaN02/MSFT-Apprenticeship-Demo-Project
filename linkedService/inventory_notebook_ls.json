@@ -1,0 +1,17 @@
+{
+	"name": "inventory_notebook_ls",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-965426158748919.19.azuredatabricks.net",
+			"authentication": "MSI",
+			"workspaceResourceId": "/subscriptions/53f8f065-b7aa-4a85-b413-afe8ddabe2b2/resourceGroups/apprentice-rg/providers/Microsoft.Databricks/workspaces/aprdemodatabricks",
+			"existingClusterId": "0404-094411-c71j7461"
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime2",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
