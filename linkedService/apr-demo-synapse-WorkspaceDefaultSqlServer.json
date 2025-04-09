@@ -1,20 +1,20 @@
 {
 	"name": "apr-demo-synapse-WorkspaceDefaultSqlServer",
-	"type": "Microsoft.Synapse/workspaces/linkedservices",
 	"properties": {
-		"typeProperties": {
-			"connectionString": "Data Source=tcp:apr-demo-synapse.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
-		},
 		"parameters": {
 			"DBName": {
 				"type": "String"
 			}
 		},
+		"annotations": [],
 		"type": "AzureSqlDW",
-		"connectVia": {
-			"referenceName": "AutoResolveIntegrationRuntime",
-			"type": "IntegrationRuntimeReference"
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=apr-demo-synapse.sql.azuresynapse.net;Initial Catalog=@{linkedService().DBName}"
 		},
-		"annotations": []
-	}
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/linkedservices"
 }
